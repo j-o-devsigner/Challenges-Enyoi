@@ -1,0 +1,285 @@
+@font-face {
+    font-family: Retro;
+    src: url(fonts/Retrochips.otf) format('OpenType');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #E8AC65;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+
+    background-color: #cadedc;
+    border-bottom: 4px solid #333;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Retro';
+    font-size: 35px;
+
+    text-shadow: -2.5px 1px #E8AC65;
+    color: #333;
+}
+
+header h2 {
+    width: 28%;
+    
+    margin: auto;
+    margin-top: 14px;
+
+    text-align: center;
+    font-family: 'Retro';
+    font-size: 1.25rem;
+    
+    color: #222;
+}
+
+#alfabeto {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 200px;
+    width: 500px;
+
+    margin: auto;
+    padding: 20px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 3px solid #333;
+    background-color: #cadedc;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: auto 2px;
+    
+    font-family: 'Retro';
+    font-size: 1.5rem;
+
+    background-color: #e9d8cb;
+    color: #333;
+    border-radius: 10px;
+    border: 2px solid #333;
+    box-shadow: -2px 2px 2px 1px #222;
+    
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+button:hover {
+    background-color: #E8AC65;
+    color: #222;
+
+    box-shadow: none;
+    border: 2px solid #222;
+    
+    transform: translateX(-3px);
+}
+
+.error {
+    background-color: #c59575;
+    opacity: .3;
+    box-shadow: none;
+    transform: translateX(-3px);
+    
+    pointer-events: none;
+}
+
+.acierto {
+    background-color: #67a29b;
+    color: #e9d8cb;
+    box-shadow: none;
+    transform: translateX(-3px);
+
+    pointer-events: none;
+}
+
+#palabra {
+    display: flex;
+    width: 50%;
+    height: 80px;
+
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#palabra .letra {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    
+    font-family: 'Retro';
+    font-size: 3rem;
+    
+    padding: 5px;
+    color: #222;
+    text-shadow: -4px 1px #e9d8cb;
+    text-align: center;
+}
+
+#ahorcado {
+    width: 25%;
+    height: 250px;
+    margin: auto;
+
+    border-radius: 3px;
+    border-bottom: 4px solid #222;
+}
+ 
+#barra-1 {
+    display: block;
+    position: relative;
+    
+    top: 50px;
+    left: 60px;
+    width: 8px;
+    height: 150px;
+ 
+    background-color: #222;
+}
+ 
+#barra-2 {
+    display: block;
+    position: relative;
+    
+    top: 40px;
+    left: 48px;
+    width: 8px;
+    height: 50px;
+ 
+    background-color: #222;
+    transform: rotate(30deg);
+}
+ 
+#barra-3 {
+    display: block;
+    position: relative;
+    
+    top: -10px;
+    left: 72px;
+    width: 8px;
+    height: 50px;
+ 
+    background-color: #222;
+    transform: rotate(-30deg);
+}
+ 
+#barra-4 {
+    display: block;
+    position: relative;
+    
+    top: -279px;
+    left: 131px;
+    width: 8px;
+    height: 150px;
+ 
+    background-color: #222;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+ 
+#cuerda {
+    display: none;
+    position: relative;
+    
+    top: -351px;
+    left: 188px;
+    width: 5.5px;
+    height: 30px;
+ 
+    background-color: #e9d8cb;
+    z-index: 1;
+}
+ 
+#cabeza {
+    display: none;
+    position: relative;
+    
+    top: -352px;
+    left: 171.5px;
+    width: 30px;
+    height: 30px;
+ 
+    border-radius: 99px;
+    border: 4px solid #333;
+    z-index: 2;
+}
+ 
+#cuerpo {
+    display: none;
+    position: relative;
+        
+    top: -352px;
+    left: 188px;
+    width: 4px;
+    height: 60px;
+    
+    background-color: #333;
+    z-index: 2;
+}
+ 
+#mano-izq {
+    display: none;
+    position: relative;
+        
+    top: -418px;
+    left: 173px;
+    width: 4px;
+    height: 40px;
+    
+    background-color: #333;
+    transform: rotate(-50deg);
+    z-index: 1;
+}
+ 
+#mano-der {
+    display: none;
+    position: relative;
+        
+    top: -459px;
+    left: 204px;
+    width: 4px;
+    height: 40px;
+    
+    background-color: #333;
+    transform: rotate(50deg);
+    z-index: 1;
+}
+ 
+#pie-izq {
+    display: none;
+    position: relative;
+        
+    top: -437px;
+    left: 178px;
+    width: 4px;
+    height: 40px;
+    
+    background-color: #333;
+    transform: rotate(30deg);
+    z-index: 1;
+}
+ 
+#pie-der {
+    display: none;
+    position: relative;
+        
+    top: -477px;
+    left: 198px;
+    width: 4px;
+    height: 40px;
+    
+    background-color: #333;
+    transform: rotate(-30deg);
+    z-index: 1;
+}
+

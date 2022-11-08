@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EDF6F9;}
+	.st1{opacity:0.4;fill:url(#SVGID_1_);}
+	.st2{fill:url(#SVGID_2_);}
+	.st3{fill:#282729;}
+</style>
+<rect class="st0" width="200" height="200"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="104.6409" y1="90.5626" x2="167.4883" y2="148.8337">
+	<stop  offset="0" style="stop-color:#000000"/>
+	<stop  offset="0.06" style="stop-color:#161616;stop-opacity:0.94"/>
+	<stop  offset="0.2625" style="stop-color:#5C5C5C;stop-opacity:0.7375"/>
+	<stop  offset="0.4538" style="stop-color:#969696;stop-opacity:0.5462"/>
+	<stop  offset="0.6285" style="stop-color:#C3C3C3;stop-opacity:0.3715"/>
+	<stop  offset="0.7834" style="stop-color:#E4E4E4;stop-opacity:0.2166"/>
+	<stop  offset="0.9125" style="stop-color:#F8F8F8;stop-opacity:0.0875"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</linearGradient>
+<polygon class="st1" points="90.14,122.14 129.47,161.47 177.1,114.15 118.17,55.21 112.73,82.53 97.78,101.44 "/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="91.1415" y1="139.7803" x2="119.7628" y2="166.3175">
+	<stop  offset="0" style="stop-color:#000000"/>
+	<stop  offset="0.06" style="stop-color:#161616;stop-opacity:0.94"/>
+	<stop  offset="0.2625" style="stop-color:#5C5C5C;stop-opacity:0.7375"/>
+	<stop  offset="0.4538" style="stop-color:#969696;stop-opacity:0.5462"/>
+	<stop  offset="0.6285" style="stop-color:#C3C3C3;stop-opacity:0.3715"/>
+	<stop  offset="0.7834" style="stop-color:#E4E4E4;stop-opacity:0.2166"/>
+	<stop  offset="0.9125" style="stop-color:#F8F8F8;stop-opacity:0.0875"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</linearGradient>
+<polygon class="st2" points="101.53,135.73 128.37,162.57 114.55,175.17 89.58,150.2 "/>
+<g>
+	<path class="st3" d="M90.14,122.14l-0.3-3.94c-0.91-8.19,1.82-17.14,9.4-26.24c6.82-8.04,10.61-13.96,10.61-20.77
+		c0-7.74-4.85-12.89-14.41-13.04c-5.46,0-11.53,1.82-15.32,4.69l-3.64-9.55c5-3.64,13.65-6.08,21.69-6.08
+		c17.44,0,25.33,10.77,25.33,22.3c0,10.31-5.76,17.75-13.04,26.39c-6.68,7.88-9.1,14.56-8.65,22.29l0.15,3.94H90.14z M86.8,143.39
+		c0-5.62,3.79-9.56,9.1-9.56c5.3,0,8.95,3.94,8.95,9.56c0,5.3-3.49,9.4-9.1,9.4C90.44,152.78,86.8,148.68,86.8,143.39z"/>
+</g>
+</svg>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <table class="calc" cellspacing="5">
+      <tr>
+        <td colspan="2" id="num1" class="numero">
+          <input id="vnum1" type="text" readonly />
+        </td>
+        <td id="operador"></td>
+        <td colspan="2" id="num2" class="numero">
+          <input id="vnum2" type="text" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="5" id="resultado">
+          <table id="res_inner">
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="tecla num">7</td>
+        <td class="tecla num">8</td>
+        <td class="tecla num">9</td>
+        <td class="tecla op">+</td>
+        <td class="tecla op">^</td>
+      </tr>
+
+      <tr>
+        <td class="tecla num">4</td>
+        <td class="tecla num">5</td>
+        <td class="tecla num">6</td>
+        <td class="tecla op">-</td>
+        <td class="tecla op">MOD</td>
+      </tr>
+
+      <tr>
+        <td class="tecla num">1</td>
+        <td class="tecla num">2</td>
+        <td class="tecla num">3</td>
+        <td class="tecla op">X</td>
+        <td class="tecla reiniciar">C</td>
+      </tr>
+
+      <tr>
+        <td class="tecla limpiar">&#60;-</td>
+        <td class="tecla num">0</td>
+        <td class="tecla num">.</td>
+        <td class="tecla op">/</td>
+        <td class="tecla res">=</td>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+@font-face {
+    font-family: Main;
+    src: url(fonts/Ubuntu-MI.ttf) format('truetype');
+}
+
+    $primary: #F64C32;
+    $line: #FBC757;
+    $bg: #F7EDE2;
+    $dark: #041C44;
+    $shadow: #ccc;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Main;
+}
+
+body{
+    background-color: $bg;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: $dark;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 7.5px $primary;
+    animation: line-light 2.5s linear infinite;
+
+    @keyframes line-light {
+        0%{
+            box-shadow: 0px 4px $primary;
+        }50%{
+            box-shadow: 0px 4px $primary, 0px 4px 9.5px $primary;
+        }100%{
+            box-shadow: 0px 4px $primary;
+        }
+    }
+
+    h1{
+        color: $bg;
+        font-size: 42px;
+        text-transform: uppercase;  
+        animation: light 2.5s linear infinite;   
+
+        @keyframes light{
+            0%{
+                text-shadow: -4px 1px $primary;
+            }
+            50%{
+                text-shadow: -4px 1px $primary, -4px 1px 7.5px $primary;
+            }
+            100%{
+                text-shadow: -4px 1px $primary;
+            }
+        }
+    }
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0%;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell{
+    position: relative;
+    border: .5px solid $dark;
+    width: 50px;
+    padding-top: 100%;
+    cursor: pointer;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4) {
+    border-left: none;
+}
+
+
+.cell:nth-child(3),
+.cell:nth-child(6) {
+    border-right: none;
+}
+
+.cell:nth-child(7){
+    border-left: none;
+    border-bottom: none;
+}
+
+.cell:nth-child(8){
+    border-bottom: none;
+}
+
+.cell:nth-child(9){
+    border-bottom: none;
+    border-right: none;
+}
+
+.cell.x,
+.cell.o {
+    cursor: not-allowed;
+}
+
+.cell.x::after,
+.cell.x::before,
+.board.turn-x .cell:not(.x):not(.o):hover::after,
+.board.turn-x .cell:not(.x):not(.o):hover::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 80px;
+    background-color: $dark;
+    border-radius: 99px;
+}
+
+.cell.x::after,
+.board.turn-x .cell:not(.x):not(.o):hover::after{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cell.x::before,
+.board.turn-x .cell:not(.x):not(.o):hover::before{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.cell.o::before,
+.board.turn-o .cell:not(.x):not(.o):hover::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 41.5px;
+    height: 41.5px;
+    border: 10px solid $primary;
+    border-radius: 50%;
+}
+
+.board.turn-x .cell:not(.x):not(.o):hover::after,
+.board.turn-x .cell:not(.x):not(.o):hover::before{
+    background-color: $shadow;
+    animation: lightX 2.5s linear infinite;
+
+    @keyframes lightX {
+        0%{
+            background-color: $shadow;
+        }50%{
+            background-color: $dark;
+            
+        }100%{
+            background-color: $shadow;
+        }
+    }
+}
+
+.board.turn-o .cell:not(.x):not(.o):hover::before{
+    border-color: $shadow;
+    animation: lightO 2.5s linear infinite;
+
+    @keyframes lightO {
+        0%{
+            border-color: $shadow;
+        }50%{
+            border-color: $primary;
+            
+        }100%{
+            border-color: $shadow;
+        }
+    }
+}
